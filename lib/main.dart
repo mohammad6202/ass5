@@ -53,6 +53,9 @@ class _MyAppState extends State<MyApp> {
               itemCount: 5,
               itemBuilder: (BuildContext context, int i) {
                 return ListTile(
+                  onTap: () {
+                    Colors.amber;
+                  },
                   trailing: itemIcon[i],
                   title: Text("${itemName[i]}"),
                   subtitle: Row(
